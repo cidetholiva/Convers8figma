@@ -1,3 +1,5 @@
+import image_68964d1184abb0ba8ebb30b04490ee42ccc93c98 from 'figma:asset/68964d1184abb0ba8ebb30b04490ee42ccc93c98.png';
+import image_e31a1b715519fbeea99a9d7818589285a80f5606 from 'figma:asset/e31a1b715519fbeea99a9d7818589285a80f5606.png';
 import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
 
@@ -12,9 +14,11 @@ export function Header() {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center shadow-lg shadow-cyan-500/30">
-            <Sparkles className="w-5 h-5 text-white" />
-          </div>
+          <img 
+            src={image_68964d1184abb0ba8ebb30b04490ee42ccc93c98} 
+            alt="Convers8 Logo" 
+            className="w-8 h-8 rounded-lg shadow-lg shadow-cyan-500/30"
+          />
           <span className="text-xl tracking-tight bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent">
             Convers8
           </span>
