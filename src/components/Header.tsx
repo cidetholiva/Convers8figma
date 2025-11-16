@@ -1,11 +1,10 @@
-import image_68964d1184abb0ba8ebb30b04490ee42ccc93c98 from 'figma:asset/68964d1184abb0ba8ebb30b04490ee42ccc93c98.png';
-import image_e31a1b715519fbeea99a9d7818589285a80f5606 from 'figma:asset/e31a1b715519fbeea99a9d7818589285a80f5606.png';
+import Logo from "../assets/Convers8.png";
 import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
 
 export function Header() {
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -14,10 +13,10 @@ export function Header() {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img 
-            src={image_68964d1184abb0ba8ebb30b04490ee42ccc93c98} 
-            alt="Convers8 Logo" 
-            className="w-8 h-8 rounded-lg shadow-lg shadow-cyan-500/30"
+          <img
+            src={Logo}
+            alt="Convers8 Logo"
+            className="w-10 h-10 rounded-full object-cover shadow-lg shadow-cyan-500/30"
           />
           <span className="text-xl tracking-tight bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent">
             Convers8
@@ -26,11 +25,21 @@ export function Header() {
 
         {/* Nav Links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#home" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">Home</a>
-          <a href="#how-it-works" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">How It Works</a>
-          <a href="#upload" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">Upload Notes</a>
-          <a href="#session" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">Start Session</a>
-          <a href="#about" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">About</a>
+          <a href="#home" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
+            Home
+          </a>
+          <a href="#how-it-works" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
+            How It Works
+          </a>
+          <a href="#upload" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
+            Upload Notes
+          </a>
+          <a href="#session" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
+            Start Session
+          </a>
+          <a href="#about" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
+            About
+          </a>
         </div>
 
         {/* CTA Button */}
