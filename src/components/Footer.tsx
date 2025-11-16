@@ -7,9 +7,11 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center">
-              <span className="text-sm">C8</span>
-            </div>
+            <img 
+              src="https://placehold.co/32x32/06b6d4/ffffff?text=C8" 
+              alt="Convers8 Logo" 
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="text-lg bg-gradient-to-r from-cyan-300 to-violet-300 bg-clip-text text-transparent">
               Convers8
             </span>
